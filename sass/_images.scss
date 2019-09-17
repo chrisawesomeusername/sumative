@@ -4,10 +4,16 @@
   }
 }
 
-.center-sec{
-  background-image: url(../images/home.jpg);
-  background-size: cover;
-  opacity: 0.3;
+
+.bg-img-container{
+  opacity: 0.4;
+  // left: 0px;
+  // top: 70px;
+  .bg-img{
+    object-fit: cover;
+  }
+
+
 
 
 }

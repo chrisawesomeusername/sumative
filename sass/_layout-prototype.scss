@@ -1,11 +1,8 @@
 // use variables for icon sizes!!!
-a:hover{
-  cursor: pointer;
-}
 
 .top-bar{
   width: 100%;
-  height: 70px;
+  height: 10vh;
   background: #2F353D;
   position: relative;
   display: flex;
@@ -16,22 +13,6 @@ a:hover{
     align-items: center;
     margin-left: 15px;
    }
-
-  .add-btn{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: white;
-    display: flex;
-    font-size: 30px;
-    .fa-bars{
-      display: flex;
-      align-items: center;
-      margin: 0 auto;
-    }
-  }
 
   .drop-menu{
     display: none;
@@ -55,9 +36,8 @@ a:hover{
 }
 
 .home-icon{
-  width: 110px;
+  width: 40px;
   height: 40px;
-  background: white;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -69,24 +49,17 @@ a:hover{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 315px;
+  // height: 315px;
   border-bottom: 1px solid white;
 
   .desc-sec{
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;;
     width: 250px;
-    height: 70px;
+    height: 10vh;
     background: #F1F5F9;
 
-    .desc-icon{
-      position: absolute;
-      left: 15px;
-      width: 40px;
-      height: 40px;
-      background: black;
-    }
     .desc-text{
       position: absolute;
       left: 100px;
@@ -98,27 +71,37 @@ a:hover{
 
 
 .nav-list{
-  // height: 312px;
+  // set max heihgt setting with overflow auto
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 40%;
+  bottom: 0px;
+  overflow: auto;
+
   .nav-item{
     position: relative;
+
     .nav-text{
-    // color: black;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 70px;
+    height: 10vh;
     background: #E4E7EB;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     }
+
     .nav-icon{
       width: 40px;
       height: 40px;
-      background: #83838F;
       position: absolute;
       top: 15px;
       right: 15px;
+      // variables or mixins for icons!!!!!
 
     }
   }
